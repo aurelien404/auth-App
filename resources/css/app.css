@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,6 +6,45 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+body {
+    @apply bg-gray-950 text-indigo-300;
+}
+
+main {
+    @apply w-full h-screen flex items-center justify-center;
+}
+
+button,
+input,
+textarea {
+    outline: none;
+    @apply border-2 border-indigo-300 py-4 px-5 hover:scale-105 active:scale-95 cursor-pointer transition-all ease-in-out duration-150;
+}
+
+h1 {
+    @apply text-4xl font-extrabold;
+}
+
+h2 {
+    @apply text-3xl font-extrabold;
+}
+
+h3 {
+    @apply text-2xl font-extrabold;
+}
+
+h4 {
+    @apply text-xl font-bold;
+}
+
+button {
+    @apply mx-auto;
+}
+form {
+    @apply w-4/8  flex flex-col gap-5;
 }
