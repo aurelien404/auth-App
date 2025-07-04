@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    @apply w-full h-screen flex items-center justify-center;
+    @apply w-full h-screen flex flex-col items-center justify-center;
 }
 
 button,

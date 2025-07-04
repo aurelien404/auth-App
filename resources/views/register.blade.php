@@ -1,4 +1,5 @@
 <x-layout>
+    <h1 class="mb-10">Register.</h1>
     <form method="POST" action="{{ route('register.store') }}">
         @csrf
         @if ($errors->any())

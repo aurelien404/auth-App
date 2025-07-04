@@ -1,4 +1,5 @@
 <x-layout>
+    <h1 class="mb-10">Login.</h1>
     <form method="POST" action="{{ route('login.attemp') }}">
         @csrf
         @if ($errors->any())
