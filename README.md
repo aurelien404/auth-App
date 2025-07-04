@@ -24,6 +24,6 @@ A simple and secure Laravel application that provides user **registration**, **l
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/aurelien404/auth-App.git
+cd your-repo-name/your-repo-name
 ```
